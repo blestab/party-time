@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7bee05b5fa1190dbf763b7ecdcb77789",
+    "content-hash": "7e35a7997467f36897cb199235810ac2",
     "packages": [
         {
             "name": "atk4/core",
@@ -170,6 +170,122 @@
             "time": "2019-02-04T13:45:00+00:00"
         },
         {
+            "name": "atk4/login",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atk4/login.git",
+                "reference": "27d41c67eb7f58894412be7f7f5c76d87012c16f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atk4/login/zipball/27d41c67eb7f58894412be7f7f5c76d87012c16f",
+                "reference": "27d41c67eb7f58894412be7f7f5c76d87012c16f",
+                "shasum": ""
+            },
+            "require": {
+                "atk4/schema": "^1.1.1",
+                "atk4/ui": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "atk4/schema": "*",
+                "behat/behat": "^3.4",
+                "behat/mink-extension": "^2.2",
+                "behat/mink-zombie-driver": "^1.4",
+                "fzaninotto/faker": "*",
+                "phpunit/phpcov": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "atk4\\login\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Romans Malinovskis",
+                    "email": "romans@agiletoolkit.org",
+                    "homepage": "https://nearly.guru/"
+                }
+            ],
+            "description": "Login and User module for Agile UI",
+            "homepage": "https://github.com/atk4/login",
+            "keywords": [
+                "Agile",
+                "acl",
+                "agile ui",
+                "atk4",
+                "auth",
+                "data",
+                "framework",
+                "login",
+                "user"
+            ],
+            "time": "2018-04-06T22:43:27+00:00"
+        },
+        {
+            "name": "atk4/schema",
+            "version": "1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atk4/schema.git",
+                "reference": "5cc14267265829c6c08225a0e2ec01a6cb097c9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atk4/schema/zipball/5cc14267265829c6c08225a0e2ec01a6cb097c9a",
+                "reference": "5cc14267265829c6c08225a0e2ec01a6cb097c9a",
+                "shasum": ""
+            },
+            "require": {
+                "atk4/dsql": "^1.2.5",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "atk4/data": "dev-develop",
+                "codeclimate/php-test-reporter": "*",
+                "phpunit/phpunit": "<6"
+            },
+            "suggest": {
+                "atk4/data": "*",
+                "jdorn/sql-formatter": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "atk4\\schema\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Romans Malinovskis",
+                    "email": "romans@agiletoolkit.org",
+                    "homepage": "https://nearly.guru/"
+                }
+            ],
+            "description": "Agile Schema",
+            "homepage": "http://github.com/atk4/schema",
+            "keywords": [
+                "Agile",
+                "alter",
+                "data",
+                "framework",
+                "migration",
+                "schema",
+                "sql"
+            ],
+            "time": "2018-08-16T10:39:21+00:00"
+        },
+        {
             "name": "atk4/ui",
             "version": "1.6.5",
             "source": {
@@ -277,6 +393,52 @@
                 "psr-3"
             ],
             "time": "2018-11-20T15:27:04+00:00"
+        },
+        {
+            "name": "twilio/sdk",
+            "version": "5.31.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twilio/twilio-php.git",
+                "reference": "58a8322c5a8ce2ff7d68cd16ff56dc8ab44c168f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/58a8322c5a8ce2ff7d68cd16ff56dc8ab44c168f",
+                "reference": "58a8322c5a8ce2ff7d68cd16ff56dc8ab44c168f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "apigen/apigen": "^4.1",
+                "phpunit/phpunit": "4.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Twilio\\": "Twilio/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Twilio API Team",
+                    "email": "api@twilio.com"
+                }
+            ],
+            "description": "A PHP wrapper for Twilio's API",
+            "homepage": "http://github.com/twilio/twilio-php",
+            "keywords": [
+                "api",
+                "sms",
+                "twilio"
+            ],
+            "time": "2019-05-01T17:36:14+00:00"
         }
     ],
     "packages-dev": [],

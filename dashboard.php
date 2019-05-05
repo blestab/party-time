@@ -9,4 +9,5 @@ $app->add(new \atk4\login\Auth())
     ->setModel(new \atk4\login\Model\User($app->db));
 
 //Guests Admin section
-$app->add('CRUD')->setModel(new Guest($app->db));
+
+$app->add(new Dashboard())->setModel(new Guest($app->db));
