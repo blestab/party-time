@@ -20,14 +20,14 @@ $form->onSubmit(function($form) {
   $form->model->save();
 
   // //Twilio SMS Notification
-  // $sid = "ACd6c42643a3736efdcce10cf39377949b"; // Your Account SID from www.twilio.com/console
-  // $token = "25e75702f517ac7030b4545e757f1c4e"; // Your Auth Token from www.twilio.com/console
+  // $sid = "??????"; // Your Account SID from www.twilio.com/console
+  // $token = "??????"; // Your Auth Token from www.twilio.com/console
   // // A Twilio number I own with SMS capabilities
-  // $twilio_number = "27765305476";
+  // $twilio_number = "???????";
   //
   // $client = new Twilio\Rest\Client($sid, $token);
   // $message = $client->messages->create(
-  //   '0765305476', // Text this number
+  //   '???????', // Text this number
   //   array(
   //     'from' => $twilio_number, // From a valid Twilio number
   //     'body' => 'Guest ' . $form->model['name']. ' will be coming. ('. $form->model['phone'] .')'
