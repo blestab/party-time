@@ -47,11 +47,13 @@ class Dashboard extends \atk4\ui\View {
     //$total_females = $model->addCondition('gender', 'female')->action('count')->getOne();
     //$total_males = $model->addCondition('gender', 'male')->action('count')->getOne();
     $units_of_drink = $model->action('fx', ['sum','units_of_drink'])->getOne();
+    $average_age = $model->action('fx', ['avg','age'])->getOne();
     $this->template['guests'] = $total_guests;
     $this->template['male'] = $total_males ?? 0;
     $this->template['female'] = $total_females ?? 0;
     $this->template['unk'] = $total_guests - $total_females - $total_males;
     $this->template['drinks'] = $units_of_drink ?? 0;
+    $this->template['avg_age'] = number_format($average_age) ?? 25;
 
     return $model;
   }
